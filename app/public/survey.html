@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder Survey</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="fa fa-credit-card"></span> Friend Finder!</h1>
+            <hr>
+            <h2 class="text-center">Please Complete The Survey (1 = Strongly Disagree... 5 = Strongly Agree...)</h2>
+            <br>
+            <!-- Basic Name and Photo -->
+            <div class="form-group">
+                <label for="name">Name (Required):</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="photo">Link to Photo Image (Required):</label>
+                <input type="text" class="form-control" id="photo">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Survey Questions -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <form>
+                                <div class="form-group">
+                                    <h2>Question 1</h2>
+                                    <label for="q1">Do you enjoy shooting guns?</label>
+                                    <select class="form-control" id="q1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 2</h2>
+                                    <label for="q2">It's summer! Time to pull out that summer dress!</label>
+                                    <select class="form-control" id="q2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 3</h2>
+                                    <label for="q3">One more shot of tequila?</label>
+                                    <select class="form-control" id="q3">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 4</h2>
+                                    <label for="q4">Let's just stay inside and watch TV tonite. Maybe dance to some Morrisey.</label>
+                                    <select class="form-control" id="q4">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 5</h2>
+                                    <label for="q5">Thank god. It's winter! We can go make snow angels!</label>
+                                    <select class="form-control" id="q5">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 6</h2>
+                                    <label for="q6">Take an inner tube down the river?</label>
+                                    <select class="form-control" id="q6">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 7</h2>
+                                    <label for="q7">It's Wednesday! Time to party!</label>
+                                    <select class="form-control" id="q7">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 8</h2>
+                                    <label for="q8">Work, work, work! Love it.</label>
+                                    <select class="form-control" id="q8">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 9</h2>
+                                    <label for="q9">Here's a ticket to leave the Earth and everybody you know for Mars! Accept?</label>
+                                    <select class="form-control" id="q9">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <h2>Question 10</h2>
+                                    <label for="q10"> My mom is the best! </label>
+                                    <select class="form-control" id="q10">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                </div>
+
+                        </div>
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </form>
+
+                        <div class="modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Your Friend Match!</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p id = "friendMatch"> </p>
+                                </div>
+                                <img class="modal-photos" id="friendImage" width=200px height=200px>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends Link</a> |
+                    <a href="https://github.com/aendelman/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        q1 = parseInt($('#q1').val());
+        q2 = parseInt($('#q2').val());
+        q3 = parseInt($('#q3').val());
+        q4 = parseInt($('#q4').val());
+        q5 = parseInt($('#q5').val());
+        q6 = parseInt($('#q6').val());
+        q7 = parseInt($('#q7').val());
+        q8 = parseInt($('#q8').val());
+        q9 = parseInt($('#q9').val());
+        q10 = parseInt($('#q10').val());
+
+        // Here we grab the form elements
+
+        $('.modal').modal();
+
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photoID: $("#photo").val().trim(),
+            scores: [
+                parseInt($("#q1").val()),
+                parseInt($("#q2").val()),
+                parseInt($("#q3").val()),
+                parseInt($("#q4").val()),
+                parseInt($("#q5").val()),
+                parseInt($("#q6").val()),
+                parseInt($("#q7").val()),
+                parseInt($("#q8").val()),
+                parseInt($("#q9").val()),
+                parseInt($("#q10").val())
+            ]
+        }
+
+        $.post("/api/friends", newFriend).done(function (data) {
+            $("#friendMatch").text(data.name);
+            $("#friendImage .modal-photo").attr("src", data.photoID);
+        })
+    
+        formComplete();
+
+     });
+
+        function formComplete() {
+            $("#name").val("");
+            $("#photo").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val("");
+        }
+
+</script>
