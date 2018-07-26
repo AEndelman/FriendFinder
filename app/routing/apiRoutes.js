@@ -1,5 +1,5 @@
 //Link Friends api
-
+var path = require("path");
 var friendData = require("../data/friends");
 
 //Routes
@@ -31,14 +31,14 @@ module.exports = function(app) {
         const friendOne = parseFloat(a.similariry);
         const friendTwo = parseFloat(b.similariry);
 
-        let comparison = 0;
+        let comp = 0;
         if (friendOne < friendTwo){
-          comparison = 1;
+          comp = 1;
         }
         else if(friendOne > friendTwo){
-          comparison = -1;
+          comp = -1;
         }
-        return comparison;
+        return comp;
       }
 
       sortedArr = friendData.sort(compare);

@@ -228,6 +228,8 @@
         }
 
         $.post("/api/friends", newFriend).done(function (data) {
+
+            req.send(newFriend);
             $("#friendMatch").text(data.name);
             $("#friendImage .modal-photo").attr("src", data.photoID);
         })
