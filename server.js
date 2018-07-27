@@ -6,7 +6,7 @@ var bodyParser = require("body-parser");
 var app = express();
 var path = require("path");
 //connect to the localhost PORT
-var PORT = 3000;
+const PORT = process.env.PORT || 4000;
 //sets up data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
